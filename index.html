@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletronic Store</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Estilo do cabeçalho */
+        .cabecalho {
+            background-color: #000; /* Preto */
+            color: #fff; /* Branco */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cabecalho img {
+            max-width: 100px;
+            vertical-align: middle;
+        }
+
+        .cabecalho h1 {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 2.5rem;
+        }
+
+        /* Estilo do menu de navegação */
+        nav {
+            background-color: #008000; /* Verde */
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #fff; /* Branco */
+            font-size: 1.2rem;
+        }
+
+        .menu li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Conteúdo principal */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .container h2 {
+            color: #008000; /* Verde */
+        }
+
+        .container p, ul {
+            line-height: 1.6;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Estilo da Tabela */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #000; /* Preto */
+            color: #fff; /* Branco */
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        /* Estilo para dispositivos móveis */
+        @media (max-width: 768px) {
+            .cabecalho h1 {
+                font-size: 2rem;
+            }
+
+            .menu li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="Imagens/logo uniube.webp" alt="Logo da Eletronic Store">
+        <h1>Eletronic Store</h1>
+    </header>
+    
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>               
+    </nav>
+
+    <div class="container">
+        <h1>Bem-vindo à Eletronic Store!</h1>
+        <p>Seu destino para as últimas novidades em tecnologia</p>
+
+        <h2>Sobre Nós</h2>
+        <p>Na Eletronic Store, nossa missão é oferecer a melhor seleção de produtos eletrônicos com alta qualidade. Trabalhamos com uma variedade de itens, desde smartphones até equipamentos de áudio. Temos tudo o que você precisa para ficar atualizado com as últimas tendências em tecnologia do mercado.</p>
+
+        <h2>Explore Nossos Produtos</h2>
+        <p>Oferecemos uma gama diversificada de produtos, incluindo:</p>
+        <ul>
+            <li>Smartphones de última geração</li>
+            <li>Computadores e acessórios</li>
+            <li>Equipamentos de áudio e vídeo</li>
+            <li>Produtos para gaming</li>
+            <li>Aparelhos inteligentes para sua casa</li>
+        </ul>
+
+        <table>
+             <tr>
+                <th>Duvidas Frequentes!</th>
+                <th>Sim</th>
+                <th>Não</th>
+             </tr>
+             <tr>
+                 <td>Entrega Brasil todo?</td>
+                 <td>X</td>
+                 <td></td>
+            </tr>
+             <tr>
+                 <td>Possui loja física?</td>
+                 <td>X</td>
+                 <td></td>
+            </tr>
+             <tr>
+                 <td>Possui produtos de marca própria?</td>
+                 <td></td>
+                 <td>X</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletronic Stors</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #000; /* Preto */
+        }
+
+        /* Cabeçalho */
+        .cabecalho {
+            background-color: #000; /* Preto */
+            color: #fff; /* Branco */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cabecalho h1 {
+            margin: 0;
+        }
+
+        .cabecalho img {
+            max-width: 100px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        /* Menu de navegação */
+        nav {
+            background-color: #008000; /* Verde */
+            padding: 10px;
+        }
+
+        nav .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav .menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav .menu li a {
+            text-decoration: none;
+            color: #fff; /* Branco */
+            font-size: 1.2rem;
+        }
+
+        nav .menu li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Conteúdo Principal */
+        h2 {
+            color: #008000; /* Verde */
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Formulário */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #008000; /* Verde */
+            border-radius: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #000; /* Preto */
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #008000; /* Verde */
+            color: #fff; /* Branco */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #006400; /* Verde escuro */
+        }
+
+        /* Estilo para dispositivos móveis */
+        @media (max-width: 768px) {
+            nav .menu li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .cabecalho img {
+                max-width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <h1>Eletronic Store</h1>
+        <img src="Imagens/logo uniube.webp" alt="Logo Uniube">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>               
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <h2>Fale Conosco!</h2>
+
+    <!-- Formulário -->
+    <form action="seu_script.php" method="POST">
+        <div>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+        </div>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+        </div>
+        <div>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
